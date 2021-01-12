@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
 	UncontrolledDropdown,
 	DropdownToggle,
@@ -16,8 +17,12 @@ function LinksLogged() {
 						<i className="fa fa-user"></i>
 					</DropdownToggle>
 					<DropdownMenu right>
-						<DropdownItem>Settings</DropdownItem>
-						<DropdownItem>Logout</DropdownItem>
+						<Link to="" className="dropdown-item">
+							Settings
+						</Link>
+						<Link to="" className="dropdown-item">
+							Logout
+						</Link>
 					</DropdownMenu>
 				</UncontrolledDropdown>
 			</Nav>
