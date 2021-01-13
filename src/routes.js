@@ -6,6 +6,7 @@ import Contact from "./views/Contact";
 import Login from "./views/Login";
 import Register from "./views/Register";
 import SingleTour from "./views/SingleTour";
+import AfterTour from "./views/AfterTour";
 const routes = [
 	{
 		path: "/",
@@ -25,6 +26,12 @@ const routes = [
 		text: "Contact",
 		component: Contact,
 		menu: true,
+	},
+	{
+		path: "/tour/completed/:tourId",
+		text: "Tour",
+		component: AfterTour,
+		menu: false,
 	},
 	{
 		path: "/tour/:type",
