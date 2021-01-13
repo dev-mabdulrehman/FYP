@@ -1,9 +1,18 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Table, Button } from "reactstrap";
+import ChatBox from "../components/ChatBox";
 import NavbarUser from "../components/NavbarUser";
 import Review from "../components/Review";
 
 export class SingleTour extends Component {
+	state = {
+		chat: true,
+	};
+	changeChatStatus = () => {
+		this.setState({
+			chat: !this.state.chat,
+		});
+	};
 	render() {
 		return (
 			<>
@@ -26,7 +35,12 @@ export class SingleTour extends Component {
 								<p className="m-0">
 									<b>Company</b> : name
 								</p>
-								<Button className="w-100 mt-2">Chat</Button>
+								<Button
+									className="w-100 mt-2"
+									onClick={() => this.changeChatStatus()}
+								>
+									Chat
+								</Button>
 								<Button className="w-100 mt-1 mb-1 mb-md-0">Book Now</Button>
 							</div>
 						</Col>
@@ -84,6 +98,7 @@ export class SingleTour extends Component {
 						</Col>
 					</Row>
 				</Container>
+				<ChatBox chat={this.state.chat} changeHandle={this.changeChatStatus} />
 			</>
 		);
 	}
