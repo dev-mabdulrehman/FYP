@@ -6,7 +6,10 @@ function _404(props) {
 	return (
 		<>
 			<NavbarUser />
-			<div className="container-wrapper d-flex align-items-center justify-content-center">
+			<div
+				className="container-wrapper d-flex align-items-center justify-content-center"
+				style={{ marginTop: "60px" }}
+			>
 				<Container className="text-center">
 					<div className="content-wrapper">
 						<h1 className="text-large">404</h1>
