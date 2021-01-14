@@ -19,13 +19,23 @@ export class SingleTour extends Component {
 				<NavbarUser />
 				<Container style={{ margin: "60px auto" }}>
 					<Row>
-						<Col md={4} lg={3}>
+						<Col md={5} lg={4}>
 							<img
 								src={`https://dummyimage.com/720x480/000/fff`}
 								className="img-fluid"
 							/>
 							<div className="detail mt-2" style={{ fontFamily: "Poppins" }}>
 								<h3>Name</h3>
+								<div className="mb-2">
+									<p className="m-0">Overall Review:</p>
+									<i className="fa fa-star"></i>
+									<i className="fa fa-star"></i>
+									<i className="fa fa-star"></i>
+									<i className="fa fa-star"></i>
+									<i className="fa fa-star" style={{ color: "#b0b0b0" }}></i>
+									<br />
+									<small>3.95 out of 5 stars based on 20 Reviews</small>
+								</div>
 								<p className="m-0">
 									<b>Days</b> : 15days
 								</p>
@@ -44,7 +54,7 @@ export class SingleTour extends Component {
 								<Button className="w-100 mt-1 mb-1 mb-md-0">Book Now</Button>
 							</div>
 						</Col>
-						<Col md={8} lg={9}>
+						<Col md={7} lg={8}>
 							<Review
 								stars={4}
 								clientName="John"
