@@ -17,11 +17,13 @@ import React, { Component } from "react";
 export class NavbarUser extends Component {
 	state = {
 		logged_in: false,
-		scrollY: 0,
 		navbar: false,
+		innerWidth: window.innerWidth,
+		scrollY: window.scrollY,
 	};
 	componentDidMount() {
 		window.addEventListener("scroll", this.handleScroll);
+		window.addEventListener("resize", this.handleResize);
 	}
 	handleScroll = event => {
 		let scroll = window.scrollY;
@@ -30,12 +32,21 @@ export class NavbarUser extends Component {
 			scrollY: scroll,
 		});
 	};
+	handleResize = event => {
+		let innerWidth = window.innerWidth;
+		this.setState({
+			...this.state,
+			innerWidth: innerWidth,
+		});
+	};
 	render() {
 		return (
 			<>
 				<Navbar
 					className={`custom-navbar fixed-top ${
-						this.state.scrollY > 5 ? "active" : ""
+						this.state.scrollY > 5 || this.state.innerWidth < 768
+							? "active"
+							: ""
 					}`}
 					expand="md"
 				>
