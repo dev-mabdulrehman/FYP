@@ -66,8 +66,9 @@ export class NavbarUser extends Component {
 						<Collapse isOpen={this.state.navbar} navbar>
 							<Nav className="ml-auto" navbar>
 								{routes.map(
-									({ text, path, menu }) =>
-										menu && (
+									({ text, path, menu, type }) =>
+										menu &&
+										type != "company" && (
 											<NavItem>
 												<Link className="nav-link" to={path}>
 													{text}
@@ -76,7 +77,11 @@ export class NavbarUser extends Component {
 										)
 								)}
 							</Nav>
-							{this.state.logged_in ? <LinksLogged /> : <LinksNotLogged />}
+							{this.props.login || this.props.login == null ? (
+								<LinksLogged />
+							) : (
+								<LinksNotLogged />
+							)}
 						</Collapse>
 					</Container>
 				</Navbar>
