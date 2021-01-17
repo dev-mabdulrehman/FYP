@@ -5,6 +5,8 @@ import About from "./views/About";
 import Contact from "./views/Contact";
 import Login from "./views/Login";
 import Register from "./views/Register";
+import CompLogin from "./views/company/Login";
+import CompRegister from "./views/company/Register";
 import SingleTour from "./views/SingleTour";
 import AfterTour from "./views/AfterTour";
 import Payment from "./views/Payment";
@@ -15,6 +17,11 @@ import History from "./views/History";
 import HistoryDetail from "./views/HistoryDetail";
 import PaymentFailed from "./views/PaymentFailed";
 import Settings from "./views/Settings";
+import Dashboard from "./views/company/Dashboard";
+import Tours from "./views/company/Tours";
+import ViewTour from "./views/company/ViewTour";
+import Packages from "./views/company/Packages";
+import ClientDetail from "./views/company/ClientDetail";
 const routes = [
 	{
 		path: "/",
@@ -47,6 +54,12 @@ const routes = [
 		text: "Tour",
 		component: AllTour,
 		menu: true,
+	},
+	{
+		path: "/user",
+		text: "Login",
+		component: Login,
+		menu: false,
 	},
 	{
 		path: "/user/login",
@@ -124,26 +137,58 @@ const routes = [
 	{
 		path: "/company",
 		text: "Login",
-		component: Login,
+		component: CompLogin,
 		menu: false,
+		type: "company",
 	},
 	{
 		path: "/company/login",
 		text: "Login",
-		component: Login,
+		component: CompLogin,
 		menu: false,
-	},
-	{
-		path: "/company/dashboard",
-		text: "Dashboard",
-		component: Login,
-		menu: false,
+		type: "company",
 	},
 	{
 		path: "/company/register",
 		text: "Register",
-		component: Register,
+		component: CompRegister,
 		menu: false,
+		type: "company",
+	},
+	{
+		path: "/company/dashboard",
+		text: "Dashboard",
+		component: Dashboard,
+		menu: true,
+		type: "company",
+	},
+	{
+		path: "/company/tours",
+		text: "tours",
+		component: Tours,
+		menu: true,
+		type: "company",
+	},
+	{
+		path: "/company/tour/packages",
+		text: "tours",
+		component: Packages,
+		menu: false,
+		type: "company",
+	},
+	{
+		path: "/company/tour/package/detail",
+		text: "tours",
+		component: ViewTour,
+		menu: false,
+		type: "company",
+	},
+	{
+		path: "/company/tour/package/detail/client",
+		text: "tours",
+		component: ClientDetail,
+		menu: false,
+		type: "company",
 	},
 	{
 		path: "/404",

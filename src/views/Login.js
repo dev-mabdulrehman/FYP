@@ -17,7 +17,7 @@ export class Login extends Component {
 	render() {
 		return (
 			<>
-				<NavbarUser />
+				<NavbarUser login={false} />
 				<div id="Login">
 					<HeroHeader>Login</HeroHeader>
 					<Container className="mt-5">
@@ -26,6 +26,7 @@ export class Login extends Component {
 								<Form
 									onSubmit={e => {
 										e.preventDefault();
+										this.props.history.push("/");
 									}}
 								>
 									<FormGroup>
@@ -35,12 +36,7 @@ export class Login extends Component {
 													<i className="fa fa-envelope"></i>
 												</InputGroupText>
 											</InputGroupAddon>
-											<Input
-												type="email"
-												name="email"
-												placeholder="Email"
-												required
-											/>
+											<Input type="email" name="email" placeholder="Email" />
 										</InputGroup>
 									</FormGroup>
 									<FormGroup>
@@ -54,7 +50,6 @@ export class Login extends Component {
 												type="password"
 												name="password"
 												placeholder="Password"
-												required
 											/>
 										</InputGroup>
 									</FormGroup>

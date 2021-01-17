@@ -17,7 +17,7 @@ export class Register extends Component {
 	render() {
 		return (
 			<>
-				<NavbarUser />
+				<NavbarUser login={false} />
 				<div id="Register">
 					<HeroHeader>Register</HeroHeader>
 					<Container className="mt-5">
