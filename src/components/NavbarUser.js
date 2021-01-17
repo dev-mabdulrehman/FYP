@@ -51,7 +51,9 @@ export class NavbarUser extends Component {
 					expand="md"
 				>
 					<Container>
-						<NavbarBrand href="/">Tour Hunting</NavbarBrand>
+						<Link to="/" className="navbar-brand">
+							Tour Hunting
+						</Link>
 						<Button
 							color="white"
 							className="navbar-toggler"
