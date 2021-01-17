@@ -1,0 +1,83 @@
+import React, { Component } from "react";
+import { Col, Container, Form, FormGroup, Input, Row } from "reactstrap";
+import NavbarUser from "../components/NavbarUser";
+import HeroHeader from "../components/sub-components/HeroHeader";
+
+export class Settings extends Component {
+	render() {
+		return (
+			<>
+				<NavbarUser />
+				<HeroHeader>Settings</HeroHeader>
+				<Container className="mt-5">
+					<Row>
+						<Col md={{ size: 6, offset: 3 }}>
+							<Form
+								onSubmit={e => {
+									e.preventDefault();
+								}}
+							>
+								<Row>
+									<Col>
+										<FormGroup>
+											<Input
+												type="text"
+												name="firstname"
+												placeholder="First Name"
+											/>
+										</FormGroup>
+									</Col>
+									<Col>
+										<FormGroup>
+											<Input
+												type="text"
+												name="lastname"
+												placeholder="Last Name"
+											/>
+										</FormGroup>
+									</Col>
+								</Row>
+								<FormGroup>
+									<Input type="email" name="email" placeholder="Email" />
+								</FormGroup>
+								<FormGroup>
+									<Input type="text" name="phone" placeholder="Phone" />
+								</FormGroup>
+								<FormGroup>
+									<Input
+										type="password"
+										name="cpassword"
+										placeholder="Current Password"
+									/>
+								</FormGroup>
+								<FormGroup>
+									<Input
+										type="password"
+										name="password"
+										placeholder="Password"
+									/>
+								</FormGroup>
+								<FormGroup>
+									<Input
+										type="password"
+										name="rpass"
+										placeholder="Confirm Password"
+									/>
+								</FormGroup>
+								<FormGroup>
+									<Input
+										type="submit"
+										className="btn btn-outline-primary"
+										value="Update"
+									/>
+								</FormGroup>
+							</Form>
+						</Col>
+					</Row>
+				</Container>
+			</>
+		);
+	}
+}
+
+export default Settings;
