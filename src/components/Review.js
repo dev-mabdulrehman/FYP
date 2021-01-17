@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReviewStars from "./sub-components/ReviewStars";
 
-export class review extends Component {
+export class Review extends Component {
 	render() {
 		return (
 			<>
@@ -34,4 +34,4 @@ export class review extends Component {
 	}
 }
 
-export default review;
+export default Review;
