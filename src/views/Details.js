@@ -85,7 +85,7 @@ export class Details extends Component {
 								color="outline-primary"
 								className="ml-auto px-4 py-1"
 								onClick={() => {
-									this.props.history.push("/tour/single/:id/payment");
+									this.props.history.push("/tour/package/booking/payment");
 								}}
 							>
 								Next

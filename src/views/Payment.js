@@ -117,7 +117,7 @@ export class Payment extends Component {
 									className="px-4 py-1"
 									onClick={() => {
 										this.props.history.push(
-											"/tour/single/:id/payment/successfull"
+											"/tour/package/payment/successfull"
 										);
 									}}
 								>

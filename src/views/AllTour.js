@@ -51,7 +51,7 @@ export class AllTour extends Component {
 													"-",
 													" "
 												)}
-												parentLink={`/tour/single/${item}`}
+												parentLink={`/tour/package/${item}`}
 											/>
 										</Col>
 									);

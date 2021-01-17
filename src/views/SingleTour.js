@@ -55,7 +55,7 @@ export class SingleTour extends Component {
 								<Button
 									className="w-100 mt-1 mb-1 mb-md-0"
 									onClick={() =>
-										this.props.history.push("/tour/single/:id/detail")
+										this.props.history.push("/tour/package/booking/detail")
 									}
 								>
 									Book Now

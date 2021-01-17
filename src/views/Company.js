@@ -108,7 +108,7 @@ function Company() {
 									>
 										<TourCard
 											imageText={"demo"}
-											parentLink={`/tour/single/${item}`}
+											parentLink={`/tour/package/${item}`}
 										/>
 									</Col>
 								);
@@ -132,7 +132,7 @@ function Company() {
 									>
 										<TourCard
 											imageText={"demo"}
-											parentLink={`/tour/single/${item}`}
+											parentLink={`/tour/package/${item}`}
 										/>
 									</Col>
 								);
@@ -156,7 +156,7 @@ function Company() {
 									>
 										<TourCard
 											imageText={"demo"}
-											parentLink={`/tour/single/${item}`}
+											parentLink={`/tour/package/${item}`}
 										/>
 									</Col>
 								);

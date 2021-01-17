@@ -27,7 +27,7 @@ class Section extends Component {
 									>
 										<TourCard
 											imageText={this.props.title}
-											parentLink={`tour/single/${item}`}
+											parentLink={`tour/package/${item}`}
 										/>
 									</Col>
 								);
