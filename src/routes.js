@@ -14,6 +14,7 @@ import Company from "./views/Company";
 import History from "./views/History";
 import HistoryDetail from "./views/HistoryDetail";
 import PaymentFailed from "./views/PaymentFailed";
+import Settings from "./views/Settings";
 const routes = [
 	{
 		path: "/",
@@ -66,7 +67,13 @@ const routes = [
 		menu: false,
 	},
 	{
-		path: "/user/history/detail/",
+		path: "/user/settings",
+		text: "Settings",
+		component: Settings,
+		menu: false,
+	},
+	{
+		path: "/user/history/detail",
 		text: "History",
 		component: HistoryDetail,
 		menu: false,

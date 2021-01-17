@@ -38,7 +38,7 @@ const items = [
 
 export class Home extends Component {
 	state = {
-		logged_in: false,
+		logged_in: true,
 	};
 	componentWillMount() {}
 	render() {

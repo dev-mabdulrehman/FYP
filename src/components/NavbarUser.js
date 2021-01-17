@@ -16,7 +16,7 @@ import React, { Component } from "react";
 
 export class NavbarUser extends Component {
 	state = {
-		logged_in: false,
+		logged_in: true,
 		navbar: false,
 		innerWidth: window.innerWidth,
 		scrollY: window.scrollY,

@@ -17,10 +17,13 @@ function LinksLogged() {
 						<i className="fa fa-user"></i>
 					</DropdownToggle>
 					<DropdownMenu right>
-						<Link to="" className="dropdown-item">
+						<Link to="/user/history" className="dropdown-item">
+							History
+						</Link>
+						<Link to="/user/settings" className="dropdown-item">
 							Settings
 						</Link>
-						<Link to="" className="dropdown-item">
+						<Link to="/user/login" className="dropdown-item">
 							Logout
 						</Link>
 					</DropdownMenu>

@@ -107,7 +107,7 @@ export class Payment extends Component {
 									color="outline-primary"
 									className="px-4 py-1 mr-2"
 									onClick={() => {
-										this.props.history.push("/tour/single/:id/detail");
+										this.props.history.push("/tour/package/booking/detail");
 									}}
 								>
 									Back
