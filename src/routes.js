@@ -7,6 +7,12 @@ import Login from "./views/Login";
 import Register from "./views/Register";
 import SingleTour from "./views/SingleTour";
 import AfterTour from "./views/AfterTour";
+import Payment from "./views/Payment";
+import Details from "./views/Details";
+import PaymentSucessfull from "./views/PaymentSucessfull";
+import Company from "./views/Company";
+import History from "./views/History";
+import HistoryDetail from "./views/HistoryDetail";
 const routes = [
 	{
 		path: "/",
@@ -26,12 +32,6 @@ const routes = [
 		text: "Contact",
 		component: Contact,
 		menu: true,
-	},
-	{
-		path: "/tour/completed/:tourId",
-		text: "Tour",
-		component: AfterTour,
-		menu: false,
 	},
 	{
 		path: "/tour/:type",
@@ -59,9 +59,76 @@ const routes = [
 		menu: false,
 	},
 	{
-		path: "/tour/single/:single",
-		text: "",
+		path: "/user/history",
+		text: "History",
+		component: History,
+		menu: false,
+	},
+	{
+		path: "/user/history/detail/",
+		text: "History",
+		component: HistoryDetail,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id",
+		text: "Single Tour",
 		component: SingleTour,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id/detail",
+		text: "Detail",
+		component: Details,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id/payment",
+		text: "Payment",
+		component: Payment,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id/review",
+		text: "Feedback",
+		component: AfterTour,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id/payment/successfull",
+		text: "Payment Sucessfull",
+		component: PaymentSucessfull,
+		menu: false,
+	},
+	{
+		path: "/company/home",
+		text: "Company",
+		component: Company,
+		menu: false,
+	},
+
+	{
+		path: "/company",
+		text: "Login",
+		component: Login,
+		menu: false,
+	},
+	{
+		path: "/company/login",
+		text: "Login",
+		component: Login,
+		menu: false,
+	},
+	{
+		path: "/company/dashboard",
+		text: "Dashboard",
+		component: Login,
+		menu: false,
+	},
+	{
+		path: "/company/register",
+		text: "Register",
+		component: Register,
 		menu: false,
 	},
 	{

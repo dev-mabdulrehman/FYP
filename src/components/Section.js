@@ -13,7 +13,7 @@ class Section extends Component {
 			<>
 				<section className={`${this.props.title.replace(" ", "-")}s py-5`}>
 					<Container>
-						<SectionHeader title={`${this.props.title}s`} className="py-5" />
+						<SectionHeader title={`${this.props.title}s`} />
 						<Row>
 							{[1, 2, 3, 4, 5, 6, 7, 8].map((item, idx) => {
 								return (

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Container, Col, Row, Table, Button } from "reactstrap";
 import ChatBox from "../components/ChatBox";
 import NavbarUser from "../components/NavbarUser";
@@ -6,7 +7,7 @@ import Review from "../components/Review";
 
 export class SingleTour extends Component {
 	state = {
-		chat: true,
+		chat: false,
 	};
 	changeChatStatus = () => {
 		this.setState({
@@ -43,7 +44,7 @@ export class SingleTour extends Component {
 									<b>Price</b> : 1000
 								</p>
 								<p className="m-0">
-									<b>Company</b> : name
+									<b>Company</b> : <Link to="/company/home">name</Link>
 								</p>
 								<Button
 									className="w-100 mt-2"
@@ -51,7 +52,14 @@ export class SingleTour extends Component {
 								>
 									Chat
 								</Button>
-								<Button className="w-100 mt-1 mb-1 mb-md-0">Book Now</Button>
+								<Button
+									className="w-100 mt-1 mb-1 mb-md-0"
+									onClick={() =>
+										this.props.history.push("/tour/single/:id/detail")
+									}
+								>
+									Book Now
+								</Button>
 							</div>
 						</Col>
 						<Col md={7} lg={8}>
