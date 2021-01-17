@@ -13,6 +13,7 @@ import PaymentSucessfull from "./views/PaymentSucessfull";
 import Company from "./views/Company";
 import History from "./views/History";
 import HistoryDetail from "./views/HistoryDetail";
+import PaymentFailed from "./views/PaymentFailed";
 const routes = [
 	{
 		path: "/",
@@ -98,6 +99,12 @@ const routes = [
 		path: "/tour/single/:id/payment/successfull",
 		text: "Payment Sucessfull",
 		component: PaymentSucessfull,
+		menu: false,
+	},
+	{
+		path: "/tour/single/:id/payment/failed",
+		text: "Payment Failed",
+		component: PaymentFailed,
 		menu: false,
 	},
 	{
