@@ -37,11 +37,7 @@ export class Payment extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Card Number</small>
 								</Label>
-								<Input
-									type="text"
-									placeholder="1234XXXXXXXXXXXX"
-									required
-								></Input>
+								<Input type="text" placeholder="1234XXXXXXXXXXXX"></Input>
 							</FormGroup>
 						</Col>
 						<Col md={6}>
@@ -49,7 +45,7 @@ export class Payment extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Mobile Number</small>
 								</Label>
-								<Input type="text" placeholder="+923XXXXXXXXX" required></Input>
+								<Input type="text" placeholder="+923XXXXXXXXX"></Input>
 							</FormGroup>
 						</Col>
 						<Col md={6}>
@@ -57,7 +53,7 @@ export class Payment extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">CVV</small>
 								</Label>
-								<Input type="text" placeholder="XXX" required></Input>
+								<Input type="text" placeholder="XXX"></Input>
 							</FormGroup>
 						</Col>
 						<Col md={6}>
@@ -67,7 +63,7 @@ export class Payment extends Component {
 								</Label>
 								<Row>
 									<Col md={6}>
-										<Input type="select" value="" required>
+										<Input type="select" value="">
 											<option value="">Month</option>
 											<option value="January">January</option>
 											<option value="Febuary">Febuary</option>
@@ -84,7 +80,7 @@ export class Payment extends Component {
 										</Input>
 									</Col>
 									<Col md={6}>
-										<Input type="select" value="" required>
+										<Input type="select" value="">
 											<option value="">Year</option>
 											{years.map((year, idx) => {
 												return (

@@ -29,7 +29,7 @@ export class Details extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Adults</small>
 								</Label>
-								<Input type="select" value="0" required>
+								<Input type="select" value="0">
 									{new Array(6).fill(1).map((_, idx) => {
 										return <option value={idx}>{idx}</option>;
 									})}
@@ -41,7 +41,7 @@ export class Details extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Children</small>
 								</Label>
-								<Input type="select" value="0" required>
+								<Input type="select" value="0">
 									{new Array(6).fill(1).map((_, idx) => {
 										return <option value={idx}>{idx}</option>;
 									})}
@@ -58,7 +58,7 @@ export class Details extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Rooms</small>
 								</Label>
-								<Input type="select" value="0" required>
+								<Input type="select" value="0">
 									{new Array(6).fill(1).map((_, idx) => {
 										return <option value={idx}>{idx}</option>;
 									})}
@@ -70,7 +70,7 @@ export class Details extends Component {
 								<Label className="text-muted mb-2">
 									<small className="text-uppercase">Type</small>
 								</Label>
-								<Input type="select" value="0" required>
+								<Input type="select" value="0">
 									<option value="single">Single</option>
 									<option value="double">Double</option>
 									<option value="triple">Triple</option>
