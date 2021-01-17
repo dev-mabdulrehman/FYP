@@ -4,7 +4,7 @@
 
 Followings are the Project Routes:
 
-### 'Client/User'
+### 'Client'
 
 Home => /  
 About => /about  
